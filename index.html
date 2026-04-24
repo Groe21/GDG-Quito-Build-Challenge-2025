@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LocalAI — IA aplicada al marketing local. Presentación para GDG Quito Build Challenge." />
+  <title>LocalAI — GDG Quito</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVEGACIÓN FIJA ==================== -->
+  <nav class="nav" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="#slide-1" class="nav-brand" aria-label="LocalAI — inicio">
+        Local<span>AI</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#slide-1">Inicio</a></li>
+        <li><a href="#slide-2">Problema</a></li>
+        <li><a href="#slide-3">Solución</a></li>
+        <li><a href="#slide-4">Arquitectura</a></li>
+        <li><a href="#slide-5">Escalabilidad</a></li>
+        <li><a href="#slide-6">Roadmap</a></li>
+        <li>
+          <a href="https://local-ai-dun.vercel.app/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="nav-cta">
+            Ver demo
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ==================== SLIDE 1 · PORTADA ==================== -->
+    <section id="slide-1" class="slide slide-cover" aria-label="Portada">
+
+      <!-- Círculos decorativos de fondo -->
+      <div class="cover-deco" aria-hidden="true">
+        <div class="deco-ring deco-ring-1"></div>
+        <div class="deco-ring deco-ring-2"></div>
+        <div class="deco-ring deco-ring-3"></div>
+        <div class="deco-dot deco-dot-1"></div>
+        <div class="deco-dot deco-dot-2"></div>
+      </div>
+
+      <div class="slide-content cover-content">
+        <div class="cover-badge">GDG Quito · Build Challenge 2025</div>
+
+        <h1 class="cover-title">
+          Local<span class="cover-title-ai">AI</span>
+        </h1>
+        <p class="cover-subtitle">IA aplicada al marketing local</p>
+
+        <blockquote class="cover-tagline">
+          "El asistente inteligente que genera, aprende y mejora<br>
+          los contenidos de tu negocio."
+        </blockquote>
+
+        <div class="cover-author">
+          <div class="author-avatar" aria-hidden="true">OG</div>
+          <div class="author-info">
+            <p class="author-name">Oscar Emilio Guerrero</p>
+            <p class="author-role">Tecnólogo en Desarrollo de Software</p>
+          </div>
+        </div>
+
+        <a href="https://local-ai-dun.vercel.app/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-yellow">
+          Ver demo en vivo &rarr;
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 2 · PROBLEMA & OPORTUNIDAD ==================== -->
+    <section id="slide-2" class="slide slide-light" aria-label="Problema y oportunidad">
+      <div class="slide-content">
+
+        <header class="slide-header">
+          <span class="slide-num">02</span>
+          <h2>Problema <span class="text-accent">&amp; Oportunidad</span></h2>
+          <p class="slide-desc">
+            El marketing digital es uno de los mayores cuellos de botella
+            para negocios locales en Latinoamérica.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="card card-problem">
+            <div class="card-icon" aria-hidden="true">⏱</div>
+            <h3>Sin tiempo</h3>
+            <p>
+              Los dueños publican de forma esporádica o nunca.
+              La consistencia es el principal generador de audiencia orgánica.
+            </p>
+          </article>
+
+          <article class="card card-problem">
+            <div class="card-icon" aria-hidden="true">📉</div>
+            <h3>Sin métricas</h3>
+            <p>
+              No saben qué posts funcionaron ni por qué.
+              Repiten estrategias sin datos y no iteran con aprendizaje real.
+            </p>
+          </article>
+
+          <article class="card card-problem">
+            <div class="card-icon" aria-hidden="true">✍️</div>
+            <h3>Sin conocimiento técnico</h3>
+            <p>
+              Redactar para Instagram, LinkedIn o Facebook requiere contexto
+              y formatos distintos que la mayoría desconoce.
+            </p>
+          </article>
+
+          <article class="card card-opportunity">
+            <div class="card-icon" aria-hidden="true">✨</div>
+            <h3>La oportunidad</h3>
+            <p>
+              Usar IA generativa para crear contenido, registrar resultados
+              y aprender de cada publicación. Un ciclo de mejora continua
+              accesible para cualquier negocio.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 3 · SOLUCIÓN MVP ==================== -->
+    <section id="slide-3" class="slide slide-dark" aria-label="Solución actual MVP">
+      <div class="slide-content">
+
+        <header class="slide-header">
+          <span class="slide-num slide-num-light">03</span>
+          <h2 class="text-white">Solución actual <span class="text-yellow">MVP</span></h2>
+          <p class="slide-desc text-muted">
+            LocalAI hoy: las funciones core que ya resuelven el problema.
+          </p>
+        </header>
+
+        <div class="mvp-grid">
+
+          <!-- Lista de features -->
+          <ul class="mvp-features" role="list">
+
+            <li class="feature-item">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <div>
+                <h4>Generación de posts por red</h4>
+                <p>Genera contenido optimizado para Instagram, Facebook, LinkedIn
+                   y Twitter con un solo prompt contextual.</p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <div>
+                <h4>Historial de posts copiados</h4>
+                <p>Registra cada post generado y copiado para trazar el
+                   historial completo de contenidos del negocio.</p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <div>
+                <h4>Marcado de resultado</h4>
+                <p>El usuario marca si el post "funcionó" o "no funcionó",
+                   construyendo un dataset de rendimiento propio.</p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <div>
+                <h4>Recomendaciones con IA</h4>
+                <p>Basado en el historial, Gemini analiza patrones y sugiere
+                   qué tipo de contenido genera más engagement.</p>
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <span class="feature-dot" aria-hidden="true"></span>
+              <div>
+                <h4>Mini chat integrado</h4>
+                <p>Refinamiento conversacional: el usuario ajusta tono,
+                   extensión o estilo del copy directamente.</p>
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- Flujo de uso -->
+          <div class="mvp-flow">
+            <h4 class="flow-title">Flujo de uso</h4>
+            <ol class="flow-steps">
+              <li class="flow-step">
+                <span class="step-num">1</span>
+                <span>Describe tu negocio y objetivo</span>
+              </li>
+              <li class="flow-step">
+                <span class="step-num">2</span>
+                <span>Elige la red social objetivo</span>
+              </li>
+              <li class="flow-step">
+                <span class="step-num">3</span>
+                <span>Genera y refina el post con IA</span>
+              </li>
+              <li class="flow-step">
+                <span class="step-num">4</span>
+                <span>Copia y publica en tu red</span>
+              </li>
+              <li class="flow-step">
+                <span class="step-num">5</span>
+                <span>Marca si funcionó y repite</span>
+              </li>
+            </ol>
+            <a href="https://local-ai-dun.vercel.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-yellow">
+              Probar ahora &rarr;
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 4 · ARQUITECTURA ==================== -->
+    <section id="slide-4" class="slide slide-light" aria-label="Arquitectura del proyecto">
+      <div class="slide-content">
+
+        <header class="slide-header">
+          <span class="slide-num">04</span>
+          <h2>Arquitectura <span class="text-accent">del proyecto</span></h2>
+          <p class="slide-desc">
+            Stack moderno y desacoplado: cada capa cumple una responsabilidad única.
+          </p>
+        </header>
+
+        <!-- Diagrama en bloques CSS puro -->
+        <div class="arch-diagram" role="img" aria-label="Diagrama de arquitectura: Usuario conecta a Frontend React+Vite, que conecta a Backend Node+Express, que conecta a Gemini API y Base de datos">
+
+          <div class="arch-block arch-user">
+            <span class="arch-icon" aria-hidden="true">👤</span>
+            <strong>Usuario</strong>
+            <small>Browser</small>
+          </div>
+
+          <div class="arch-arrow" aria-hidden="true"></div>
+
+          <div class="arch-block arch-frontend">
+            <span class="arch-icon" aria-hidden="true">⚛</span>
+            <strong>Frontend</strong>
+            <small>React + Vite</small>
+            <small class="arch-tag">Vercel</small>
+          </div>
+
+          <div class="arch-arrow" aria-hidden="true"></div>
+
+          <div class="arch-block arch-backend">
+            <span class="arch-icon" aria-hidden="true">⚙</span>
+            <strong>Backend</strong>
+            <small>Node.js + Express</small>
+            <small class="arch-tag">REST API</small>
+          </div>
+
+          <div class="arch-arrow" aria-hidden="true"></div>
+
+          <!-- Último nivel: dos bloques apilados -->
+          <div class="arch-split">
+            <div class="arch-block arch-ai">
+              <span class="arch-icon" aria-hidden="true">🤖</span>
+              <strong>Gemini API</strong>
+              <small>Google AI</small>
+            </div>
+            <div class="arch-split-connector" aria-hidden="true"></div>
+            <div class="arch-block arch-db">
+              <span class="arch-icon" aria-hidden="true">🗄</span>
+              <strong>Base de datos</strong>
+              <small>PostgreSQL</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Módulos principales -->
+        <div class="modules-grid">
+          <div class="module-card">
+            <span class="module-tag">auth</span>
+            <p>Gestión de usuarios y sesiones seguras</p>
+          </div>
+          <div class="module-card">
+            <span class="module-tag">generación</span>
+            <p>Prompts estructurados hacia Gemini por red social</p>
+          </div>
+          <div class="module-card">
+            <span class="module-tag">historial</span>
+            <p>Almacenamiento y consulta de posts anteriores</p>
+          </div>
+          <div class="module-card">
+            <span class="module-tag">métricas</span>
+            <p>Análisis de rendimiento y recomendaciones con IA</p>
+          </div>
+        </div>
+
+        <p class="arch-note">
+          Esta arquitectura permite iterar cada módulo de forma independiente
+          sin romper el sistema completo.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 5 · ESCALABILIDAD ==================== -->
+    <section id="slide-5" class="slide slide-dark" aria-label="Escalabilidad">
+      <div class="slide-content">
+
+        <header class="slide-header">
+          <span class="slide-num slide-num-light">05</span>
+          <h2 class="text-white">Escalabilidad <span class="text-yellow">&amp; Crecimiento</span></h2>
+          <p class="slide-desc text-muted">
+            Del MVP a una plataforma robusta: el camino técnico ya está trazado.
+          </p>
+        </header>
+
+        <div class="scale-grid">
+
+          <!-- Estrategia -->
+          <div class="scale-col">
+            <h3 class="scale-col-title">Estrategia de escala</h3>
+            <ul class="scale-list" role="list">
+
+              <li class="scale-item">
+                <span class="scale-icon" aria-hidden="true">↔</span>
+                <div>
+                  <strong>API stateless</strong>
+                  <p>Sin estado en servidor: permite escalar horizontalmente
+                     con múltiples instancias sin conflicto de sesiones.</p>
+                </div>
+              </li>
+
+              <li class="scale-item">
+                <span class="scale-icon" aria-hidden="true">🧩</span>
+                <div>
+                  <strong>Separación por servicios</strong>
+                  <p>Auth, generación, historial y métricas como módulos
+                     independientes. Listos para convertirse en microservicios.</p>
+                </div>
+              </li>
+
+              <li class="scale-item">
+                <span class="scale-icon" aria-hidden="true">⚡</span>
+                <div>
+                  <strong>Cache estratégico</strong>
+                  <p>Redis para respuestas frecuentes y prompts similares.
+                     Reduce latencia y costos de API Gemini.</p>
+                </div>
+              </li>
+
+              <li class="scale-item">
+                <span class="scale-icon" aria-hidden="true">📬</span>
+                <div>
+                  <strong>Colas asíncronas</strong>
+                  <p>Procesamiento de generación masiva sin bloquear la UI.
+                     BullMQ / RabbitMQ para tareas pesadas.</p>
+                </div>
+              </li>
+
+              <li class="scale-item">
+                <span class="scale-icon" aria-hidden="true">📊</span>
+                <div>
+                  <strong>Observabilidad</strong>
+                  <p>Logs estructurados, métricas por tenant y alertas
+                     tempranas con OpenTelemetry.</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Riesgos -->
+          <div class="scale-col">
+            <h3 class="scale-col-title">Riesgos <span class="text-yellow">&amp;</span> Mitigaciones</h3>
+
+            <div class="risk-card">
+              <div class="risk-header">
+                <span class="risk-badge risk-high">Alto</span>
+                <strong>Dependencia de Gemini API</strong>
+              </div>
+              <p>Abstracción del proveedor IA con adaptador intercambiable
+                 (OpenAI, Claude, modelos locales).</p>
+            </div>
+
+            <div class="risk-card">
+              <div class="risk-header">
+                <span class="risk-badge risk-med">Medio</span>
+                <strong>Costos de API a escala</strong>
+              </div>
+              <p>Cache agresivo, límites por usuario y tier de pago
+                 para controlar el gasto operacional.</p>
+            </div>
+
+            <div class="risk-card">
+              <div class="risk-header">
+                <span class="risk-badge risk-low">Bajo</span>
+                <strong>Calidad del contenido generado</strong>
+              </div>
+              <p>Sistema de feedback crea un dataset de fine-tuning
+                 propio a largo plazo.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 6 · ROADMAP ==================== -->
+    <section id="slide-6" class="slide slide-cover" aria-label="Roadmap y futuras actualizaciones">
+
+      <div class="cover-deco" aria-hidden="true">
+        <div class="deco-ring deco-ring-1"></div>
+        <div class="deco-ring deco-ring-2"></div>
+        <div class="deco-dot deco-dot-1"></div>
+      </div>
+
+      <div class="slide-content">
+
+        <header class="slide-header">
+          <span class="slide-num slide-num-light">06</span>
+          <h2 class="text-white">Roadmap <span class="text-yellow">&amp; Futuro</span></h2>
+          <p class="slide-desc text-muted">
+            Lo que viene cuando el MVP valide el mercado y tengamos tracción real.
+          </p>
+        </header>
+
+        <div class="roadmap-grid">
+
+          <div class="roadmap-phase">
+            <span class="phase-badge">Fase 2</span>
+            <ul class="roadmap-list" role="list">
+              <li>Brand voice personalizado por negocio</li>
+              <li>A/B testing de copys</li>
+              <li>Dashboard de métricas avanzado</li>
+            </ul>
+          </div>
+
+          <div class="roadmap-phase">
+            <span class="phase-badge">Fase 3</span>
+            <ul class="roadmap-list" role="list">
+              <li>Chat IA más conversacional</li>
+              <li>Recomendador de horario de publicación</li>
+              <li>Integración directa con redes sociales (API)</li>
+            </ul>
+          </div>
+
+          <div class="roadmap-phase">
+            <span class="phase-badge">Fase 4</span>
+            <ul class="roadmap-list" role="list">
+              <li>Multi-negocio / agencias</li>
+              <li>Fine-tuning con datos propios acumulados</li>
+              <li>Plan freemium + modelo SaaS</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Demo destacado -->
+        <div class="demo-banner">
+          <div class="demo-banner-text">
+            <span class="demo-label">Demo disponible ahora</span>
+            <a href="https://local-ai-dun.vercel.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="demo-link">
+              local-ai-dun.vercel.app
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA final -->
+        <div class="cta-box">
+          <h3>Busco feedback, testers y aliados</h3>
+          <p>Si tienes un negocio local, eres dev o crees en este problema, hablemos.</p>
+          <div class="cta-actions">
+            <a href="https://local-ai-dun.vercel.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-yellow">
+              Probar la demo
+            </a>
+            <a href="#slide-1" class="btn btn-outline-light">
+              Ver desde el inicio
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <strong>Local<span>AI</span></strong>
+        <span>IA aplicada al marketing local</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Links del footer">
+        <a href="https://local-ai-dun.vercel.app/"
+           target="_blank"
+           rel="noopener noreferrer">Demo en vivo</a>
+        <a href="mailto:tu@email.com">tu@email.com</a>
+        <a href="https://github.com/tu-usuario"
+           target="_blank"
+           rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/tu-usuario"
+           target="_blank"
+           rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+
+    </div>
+    <p class="footer-copy">&copy; 2025 LocalAI &middot; GDG Quito Build Challenge</p>
+  </footer>
+
+</body>
+</html>
